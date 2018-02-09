@@ -10,6 +10,10 @@ namespace ExercitiiW3source
     {
         static void Main(string[] args)
         {
+            //my first GitHub project
+
+            Console.WriteLine("Hello world!");
+            Console.ReadKey();
         }
     }
 }
