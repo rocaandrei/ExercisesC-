@@ -29,18 +29,5 @@ namespace ExercitiiW3source
             Console.WriteLine("a - b = " + (a - b));
             Console.WriteLine("a : b = " + (a / b));
         }
-        public class Numbers
-        {
-            public int No;
-            public string Type;
-
-            public Numbers() { }
-            public Numbers(int no, string type)
-            {
-                No = no;
-                Type = type;
-            }
-        }
-
     }
 }
