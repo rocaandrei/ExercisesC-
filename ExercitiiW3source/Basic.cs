@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace ExercitiiW3source
 {
     public class Basic//exercises 
+    {
         public static void LongestWord()//the longest word in a string
         {
             string myString = "This is a paralelipiped.";
