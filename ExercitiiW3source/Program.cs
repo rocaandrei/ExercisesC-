@@ -10,7 +10,8 @@ namespace ExercitiiW3source
     {
         static void Main(string[] args)
         {
-            PrintNo();
+            Basic.ReverseSentence("Ana are mere si motanul e cuminte.");
+           
         }
 
         public static void CalculateAB(int a, int b)
