@@ -15,17 +15,17 @@ namespace ExercitiiW3source
             string Row3 = "  # ### ### ### ### ###   # ### ### # # ";
             string Row4 = "  # #     #   #   # # #   # # #   # # # ";
             string Row5 = "  # ### ###   # ### ###   # ###   # ### ";
-           // while (true)
-           // {
+            while (true)
+           {
 
                 Console.WriteLine("Introduceti un numar: ");
-                string nrString = DateTime.Now.ToString();
+            string nrString = Console.ReadLine();
                 char[] nrInCifre = nrString.ToCharArray();
             
                 for (int j = 0; j < nrInCifre.Length; j++)
                 {
 
-                    //int cifra = int.Parse(Console.ReadLine());
+                  //  int cifra = int.Parse(Console.ReadLine());
 
                     if (nrInCifre[j] == '1')
                     {
@@ -165,6 +165,6 @@ namespace ExercitiiW3source
                     }
                 }
             }
-       // }
+       }
     }
 }

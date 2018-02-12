@@ -10,7 +10,7 @@ namespace ExercitiiW3source
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Basic.Range(2,-2));
+            ConcatNo.PrintNo();
         }
 
         
