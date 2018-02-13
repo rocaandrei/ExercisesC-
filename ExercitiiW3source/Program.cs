@@ -11,7 +11,12 @@ namespace ExercitiiW3source
 
         public static void Main(string[] args)
         {
+
+
+            Console.WriteLine(Fibonacci.FibonacciNo(0));
             
+
+
         }
 
         
