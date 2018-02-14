@@ -22,5 +22,20 @@ namespace ExercitiiW3source
             return a;
         }
 
+        public static int FibonacciRec(int no)//fibonacci with recursion 
+        {
+            if (no == 0)
+            {
+                return 0;
+            }
+            if (no == 1)
+            {
+                return 1;
+            }
+            else
+            {
+                return FibonacciRec(no - 2) + FibonacciRec(no - 1);
+            }
+        }
     }
 }
