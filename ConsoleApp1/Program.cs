@@ -5,15 +5,17 @@ using System.Text;
 using System.Threading.Tasks;
 using ConditionalLoop;
 
-namespace ExercitiiW3source
+namespace ConsoleApp
 {
     public class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
+            while(true)
+            {
+                ConditionalStatements.LeapYear();
+            }
             
         }
-
     }
-
 }

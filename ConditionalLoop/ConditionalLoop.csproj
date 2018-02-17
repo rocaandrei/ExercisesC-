@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{61E688A1-8E1B-4EC8-A491-EADC61BF233E}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>ExercitiiW3source</RootNamespace>
-    <AssemblyName>ExercitiiW3source</AssemblyName>
+    <ProjectGuid>{389DF02E-EAD6-4DE2-9208-1C818276DBBC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ConditionalLoop</RootNamespace>
+    <AssemblyName>ConditionalLoop</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -42,22 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Basic.cs" />
-    <Compile Include="ConcatNo.cs" />
-    <Compile Include="DataTypes.cs" />
-    <Compile Include="Fibonacci.cs" />
-    <Compile Include="Numbers.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="ConditionalStatements.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ConditionalLoop\ConditionalLoop.csproj">
-      <Project>{389df02e-ead6-4de2-9208-1c818276dbbc}</Project>
-      <Name>ConditionalLoop</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
