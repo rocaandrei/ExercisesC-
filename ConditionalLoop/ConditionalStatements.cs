@@ -50,16 +50,172 @@ namespace ConditionalLoop
             Console.Write("Enter year: ");
             bool result = int.TryParse(Console.ReadLine(), out int a);
 
-            if(DateTime.IsLeapYear(a))
+            if (DateTime.IsLeapYear(a))
             {
                 Console.WriteLine(a + " Is a leap year.");
             }
-            else if (a <1000)
+            else if (a < 1000)
                 Console.WriteLine(" Unknow");
-            else {
+            else
+            {
                 Console.WriteLine(a + " Is not a leap year.");
             }
         }
+        public static void ToVote()
+        {
+            Console.Write("Enter your age: ");
+            bool result = int.TryParse(Console.ReadLine(), out int a);
+
+            if (a >= 18)
+            {
+                Console.WriteLine("You can vote!");
+            }
+            else
+                Console.WriteLine("You can't vote!");
+        }
+        public static void DetermineN()
+        {
+            Console.Write("Input m value:");
+            bool result = int.TryParse(Console.ReadLine(), out int m);
+            int n = 0;
+
+            if (m == 0)
+            {
+                Console.WriteLine("n = " + n);
+            }
+            else if (m > 0)
+            {
+                Console.WriteLine("n = " + (n + 1));
+            }
+            else
+                Console.WriteLine("n = " + (n - 1));
+        }
+        public static void YourHeight()
+        {
+            Console.WriteLine("Enter your height in cm: ");
+            bool result = int.TryParse(Console.ReadLine(), out int a);
+            if (a < 135)
+            {
+                Console.WriteLine("Dwarf");
+            }
+            else if (a > 135 && a < 175)
+            {
+                Console.WriteLine("Normal");
+            }
+            else
+                Console.WriteLine("Tall");
+        }
+        public static void TheLargestNo(int a, int b, int c)
+        {
+            if (a > b && a > c)
+            {
+                Console.WriteLine("First no is the Largest");
+            }
+            else if (b > a && b > c)
+            {
+                Console.WriteLine("Second no is the Largest");
+            }
+            else
+                Console.WriteLine("The third no is the Largest");
+        }
+        public static void Quadrant()
+        {
+            Console.WriteLine("Enter x:");
+            bool result = int.TryParse(Console.ReadLine(), out int x);
+            Console.WriteLine("Enter y: ");
+            result = int.TryParse(Console.ReadLine(), out int y);
+            Console.WriteLine(x > 0 && y > 0 ? "The coordinate point (" + x + "," + y + ") lies in the First quadrant." : null);
+            Console.WriteLine(x > 0 && y < 0 ? "The coordinate point (" + x + "," + y + ") lies in the Second quadrant." : null);
+            Console.WriteLine(x < 0 && y < 0 ? "The coordinate point (" + x + "," + y + ") lies in the Third quadrant." : null);
+            Console.WriteLine(x < 0 && y > 0 ? "The coordinate point (" + x + "," + y + ") lies in the Fourth quadrant." : null);
+        }
+        public static void EligibilityAdmission()
+        {
+            Console.Write("Input the marks obtained in Mathematics: ");
+            bool result = int.TryParse(Console.ReadLine(), out int math);
+            Console.Write("Input the marks obtained in Physics: ");
+            result = int.TryParse(Console.ReadLine(), out int phy);
+            Console.Write("Input the marks obtained in Chemistry: ");
+            result = int.TryParse(Console.ReadLine(), out int chem);
+            while (math >= 65 && phy >= 55 && chem >= 50)
+            {
+                if ((math + phy + chem) > 180 || (math + phy) > 140)
+                {
+                    Console.WriteLine("The candidate is eligible for admission.");
+                }
+                else
+                    Console.WriteLine("The candidate is not eligible");
+                break;
+            }
+            if (math < 65 && phy < 55 && chem < 50)
+            {
+                Console.WriteLine("The candidate is not eligible");
+            }
+        }
+        public static void StudentRoll()
+        {
+            Console.Write("Input the Roll Number of the student: ");
+            string rollNo = Console.ReadLine();
+            Console.Write("Input the Name of the Student: ");
+            string name = Console.ReadLine();
+            Console.WriteLine("Input the marks of Physics, Chemistry and Computer Application: ");
+            string phyChemCop = Console.ReadLine();
+            string[] grades = phyChemCop.Split(' ');
+            int sum = 0;
+            for (int i = 0; i < grades.Length; i++)
+            {
+                sum += int.Parse(grades[i]);
+            }
+            Console.WriteLine("Marks in Physics: " + grades[0]);
+            Console.WriteLine("Marks in Chemistry: " + grades[1]);
+            Console.WriteLine("Marks in Computer Application: " + grades[2]);
+            Console.WriteLine("Total Marks = " + sum);
+            Console.WriteLine("Percentage = " + sum / 3.0);
+
+            if ((sum / 3.0) > 60.0)
+            {
+                Console.WriteLine("Division = First");
+            }
+            else if ((sum / 3.0) > 40.0 && (sum / 3.0) < 60.0)
+            {
+                Console.WriteLine("Division = Second");
+            }
+            else if ((sum / 3.0) < 40.0)
+            {
+                Console.WriteLine("Division = Faild");
+            }
+        }
+
+        public static void Centigrade()
+        {
+            Console.WriteLine("Enter Centigrade: ");
+            int temp = int.Parse(Console.ReadLine());
+
+            if (temp < 0)
+            { Console.WriteLine("Freezing weather"); }
+            else if (temp >= 0 && temp < 10)
+            {
+                Console.WriteLine("Cold weather");
+            }
+            else if (temp > 20 && temp < 30)
+            {
+                Console.WriteLine("Normal in Temp");
+            }
+            else if (temp > 30 && temp < 40)
+            {
+                Console.WriteLine("Its Hot");
+            }
+            else if (temp >= 40)
+            {
+                Console.WriteLine("Its Very Hot");
+            }
+        }
+
+
     }
 
+
 }
+
+
+
