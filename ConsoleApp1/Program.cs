@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ConditionalLoop;
+using CodeWarsExercises;
 
 namespace ConsoleApp
 {
@@ -11,13 +12,10 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            while (true)
-            {
-                ConditionalStatements.Centigrade(); 
-            }
-                
-                
-           }
+            Console.WriteLine( Exercises.XO("SADSXXOSA"));
+        }
         
+       
+
     }
 }
