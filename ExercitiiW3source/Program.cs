@@ -11,7 +11,7 @@ namespace ExercitiiW3source
     {
         public static void Main(string[] args)
         {
-            ForLoops.PatternLikeTriangleNo(10);
+            ForLoops.IsoscelTriangleNo(10);
         }
 
     }

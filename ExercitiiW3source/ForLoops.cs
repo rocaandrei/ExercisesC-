@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ExercitiiW3source
 {
@@ -61,5 +57,36 @@ namespace ExercitiiW3source
                 Console.WriteLine();
             }
         }
+        public static void IsoscelTriangleNo(int row)
+        {
+            int count = 1;
+            int spc = row - 1;
+
+            for (int i = 1; i <= row; i++)// for-ul ce ne face randurile
+            {
+                for (int k = spc; k >= 1; k--)//for pentru coloane 
+                {
+                    Console.Write(" ");
+                }
+                for (int j = 1; j <= i; j++)//for pentru coloane 
+                {
+                    Console.Write(" "+count++);
+                    if (count == 15)
+                    {
+                        break;//break-ul asta imi face triunchil isoscel/mai frumos... daca e compus doar din 5 randuri
+                    }
+                }
+                Console.WriteLine();
+                spc--;
+            }
+        }
+        public static void IsoscelTriangle()
+        {
+            for (int i = 0; i < 5; i++)
+            {
+
+            }
+        }
+
     }
 }
