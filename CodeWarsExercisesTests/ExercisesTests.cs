@@ -15,7 +15,7 @@ namespace CodeWarsExercises.Tests
         public void XOTestCodeWars()
         {
             string a = "12323";
-            Assert.IsFalse(false, a);
+            Assert.IsFalse(true, a);
         }
     }
 }
