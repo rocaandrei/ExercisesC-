@@ -82,11 +82,41 @@ namespace ExercitiiW3source
         }
         public static void IsoscelTriangle()
         {
-            for (int i = 0; i < 5; i++)
+            int spc = 6;
+            for (int i = 0; i <= 5; i++)
             {
-
+                for (int j = spc; j >=1; j--)
+                {
+                    Console.Write(" ");
+                }
+                for (int k = 1; k <= i; k++)
+                {
+                    Console.Write(" *");
+                }
+                Console.WriteLine();
+                spc--;
             }
         }
-
+        public static void FactorialNo(int no) // calcul factorial, adia 5! = 5*4*3*2*1 = 120
+        {
+            int count = 1;
+            int factorial = 1;
+            while (no >= count )
+            {
+                factorial *= count;
+                count++;
+            }
+            Console.WriteLine("The factorial of " + no + " is " + factorial);
+        }
+        public static void EvenNo(int no)
+        {
+            int sum = 0;
+            for (int i = 1; i <= no; i++)
+            {
+                Console.Write( " " + (2*i));
+                sum += 2 * i;
+            }
+            Console.WriteLine("\nThe Sum of even Natural Number upto {0} terms : {1} \n", no, sum);
+        }
     }
 }

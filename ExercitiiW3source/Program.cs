@@ -11,7 +11,7 @@ namespace ExercitiiW3source
     {
         public static void Main(string[] args)
         {
-            ForLoops.IsoscelTriangleNo(10);
+            ForLoops.EvenNo(5);
         }
 
     }
