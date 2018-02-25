@@ -14,7 +14,7 @@ namespace ExercitiiW3source
                 for (int j = 1; j < 10; j++)
                 {
                     if (j <= 10)
-                        Console.Write(j + "x" + i + "= " + (j * i)+ " ");
+                        Console.Write(j + "x" + i + "= " + (j * i) + " ");
                     else
                         Console.Write(j + "x" + i + "= " + (j * i) + " ");
                 }
@@ -27,12 +27,12 @@ namespace ExercitiiW3source
             int sum = 0;
             for (int i = 1; i < 20; i++)
             {
-                if(i%2 != 0 )
+                if (i % 2 != 0)
                 {
                     sum += i;
                 }
             }
-            Console.WriteLine("The sum of the first 10 odd no is: "+ sum);
+            Console.WriteLine("The sum of the first 10 odd no is: " + sum);
         }
         public static void PatternLikeTriangle(int n)
         {
@@ -70,7 +70,7 @@ namespace ExercitiiW3source
                 }
                 for (int j = 1; j <= i; j++)//for pentru coloane 
                 {
-                    Console.Write(" "+count++);
+                    Console.Write(" " + count++);
                     if (count == 15)
                     {
                         break;//break-ul asta imi face triunchil isoscel/mai frumos... daca e compus doar din 5 randuri
@@ -85,7 +85,7 @@ namespace ExercitiiW3source
             int spc = 6;
             for (int i = 0; i <= 5; i++)
             {
-                for (int j = spc; j >=1; j--)
+                for (int j = spc; j >= 1; j--)
                 {
                     Console.Write(" ");
                 }
@@ -101,7 +101,7 @@ namespace ExercitiiW3source
         {
             int count = 1;
             int factorial = 1;
-            while (no >= count )
+            while (no >= count)
             {
                 factorial *= count;
                 count++;
@@ -113,10 +113,116 @@ namespace ExercitiiW3source
             int sum = 0;
             for (int i = 1; i <= no; i++)
             {
-                Console.Write( " " + (2*i));
+                Console.Write(" " + (2 * i));
                 sum += 2 * i;
             }
             Console.WriteLine("\nThe Sum of even Natural Number upto {0} terms : {1} \n", no, sum);
         }
+        public static void NoTriangle(int no)
+        {
+            int count = 1;
+            int spc = no + 4 - 1;
+            for (int i = 0; i <= no; i++)
+            {
+                for (int j = spc; j >= 1; j--)
+                {
+                    Console.Write(" ");
+                }
+                for (int x = 1; x <= i; x++)
+                {
+                    Console.Write(" " + count);
+
+                }
+                Console.WriteLine();
+                spc--;
+                count++;
+            }
+        }
+        public static void HarmonicSeries(int no)
+        {
+            double sum = 0;
+            for (int i = 1; i < no; i++)
+            {
+                sum += 1.0 / i;
+            }
+            Console.WriteLine("The sum of the hermonic series of " + no + " is " + sum);
+        }
+        public static void OddAsteriskTriangle(int no)
+        {
+            int spc = no - 1;
+            for (int i = 0; i < no; i++)
+            {
+                for (int k = spc; k >= 1; k--)
+                {
+                    Console.Write(" ");
+                }
+                for (int j = 0; j < i; j++)
+                {
+                    if (i % 2 != 0)
+                    {
+                        Console.Write(" *");
+                    }
+                }
+                Console.WriteLine();
+                spc--;
+            }
+        }
+        public static void SumOfSeries(int no)
+        {
+            int length = 5;
+            int sum = 0;
+            for (int i = 0; i < length; i++)
+            {
+                sum += no;
+                no = no * 10 + 9;
+            }
+            Console.WriteLine(sum);
+        }
+        public static void FloydTriangle()
+        {
+            int p, q;
+            for (int i = 1; i < 5; i++)
+            {
+                if (i % 2 == 0)
+                { p = 1; q = 0; }
+                else
+                { p = 0; q = 1; }
+
+                for (int j = 1; j <= i; j++)
+                {
+                    if (j % 2 == 0)
+                    {
+                        Console.Write(p);
+                    }
+                    else
+                        Console.Write(q);
+                }
+                Console.Write("\n");
+            }
+        }
+        public static void SquqreNoSum(int no)
+        {
+            double sum = 0.0;
+            for (int i = 1; i <= no; i++)
+            {
+                sum += Math.Pow(i, 2.0);
+            }
+            Console.WriteLine("The sum of first "+ no+" square numbers is: " + sum );
+        }
+        public static void SumOfSeries2(int no)
+        {
+            int sum = 0;
+            int nr = 1;
+            for (int i = 1; i <= no; i++)
+            {
+                Console.Write(" " + nr);
+                sum = sum + nr;
+                nr = (nr * 10) + 1; 
+            }
+            Console.WriteLine("Number of terms " + no + " sum is: "+ sum);
+        }
     }
+    
+
+
 }

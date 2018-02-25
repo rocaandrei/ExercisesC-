@@ -11,7 +11,8 @@ namespace ExercitiiW3source
     {
         public static void Main(string[] args)
         {
-            ForLoops.EvenNo(5);
+            ForLoops.SumOfSeries2(5);
+      
         }
 
     }
