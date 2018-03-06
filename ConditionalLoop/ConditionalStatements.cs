@@ -25,7 +25,8 @@ namespace ConditionalLoop
         public static void EvenOdd()
         {
             Console.WriteLine("Enter no: ");
-            bool result = int.TryParse(Console.ReadLine(), out int a);
+            int a = 0;
+            bool result = int.TryParse(Console.ReadLine(), out a);
             if (a % 2 == 0)
             {
                 Console.WriteLine("Number " + a + " is even.");
@@ -36,7 +37,8 @@ namespace ConditionalLoop
         public static void PositiveOrNegativeNo()
         {
             Console.WriteLine("Enter no: ");
-            bool result = int.TryParse(Console.ReadLine(), out int a);
+            int a = 0;
+            bool result = int.TryParse(Console.ReadLine(), out a);
 
             if (a > 0)
             {
@@ -48,7 +50,8 @@ namespace ConditionalLoop
         public static void LeapYear()
         {
             Console.Write("Enter year: ");
-            bool result = int.TryParse(Console.ReadLine(), out int a);
+            int a = 0;
+            bool result = int.TryParse(Console.ReadLine(), out a);
 
             if (DateTime.IsLeapYear(a))
             {
@@ -64,7 +67,8 @@ namespace ConditionalLoop
         public static void ToVote()
         {
             Console.Write("Enter your age: ");
-            bool result = int.TryParse(Console.ReadLine(), out int a);
+            int a = 0;
+            bool result = int.TryParse(Console.ReadLine(), out  a);
 
             if (a >= 18)
             {
@@ -76,7 +80,8 @@ namespace ConditionalLoop
         public static void DetermineN()
         {
             Console.Write("Input m value:");
-            bool result = int.TryParse(Console.ReadLine(), out int m);
+            int m = 0;
+            bool result = int.TryParse(Console.ReadLine(), out  m);
             int n = 0;
 
             if (m == 0)
@@ -93,7 +98,8 @@ namespace ConditionalLoop
         public static void YourHeight()
         {
             Console.WriteLine("Enter your height in cm: ");
-            bool result = int.TryParse(Console.ReadLine(), out int a);
+            int a = 0;
+            bool result = int.TryParse(Console.ReadLine(), out a);
             if (a < 135)
             {
                 Console.WriteLine("Dwarf");
@@ -121,9 +127,11 @@ namespace ConditionalLoop
         public static void Quadrant()
         {
             Console.WriteLine("Enter x:");
-            bool result = int.TryParse(Console.ReadLine(), out int x);
+            int x = 0;
+            bool result = int.TryParse(Console.ReadLine(), out x);
             Console.WriteLine("Enter y: ");
-            result = int.TryParse(Console.ReadLine(), out int y);
+            int y = 0;
+            result = int.TryParse(Console.ReadLine(), out  y);
             Console.WriteLine(x > 0 && y > 0 ? "The coordinate point (" + x + "," + y + ") lies in the First quadrant." : null);
             Console.WriteLine(x > 0 && y < 0 ? "The coordinate point (" + x + "," + y + ") lies in the Second quadrant." : null);
             Console.WriteLine(x < 0 && y < 0 ? "The coordinate point (" + x + "," + y + ") lies in the Third quadrant." : null);
@@ -132,11 +140,14 @@ namespace ConditionalLoop
         public static void EligibilityAdmission()
         {
             Console.Write("Input the marks obtained in Mathematics: ");
-            bool result = int.TryParse(Console.ReadLine(), out int math);
+            int math = 0;
+            bool result = int.TryParse(Console.ReadLine(), out math);
             Console.Write("Input the marks obtained in Physics: ");
-            result = int.TryParse(Console.ReadLine(), out int phy);
+            int phy = 0;
+            result = int.TryParse(Console.ReadLine(), out phy);
             Console.Write("Input the marks obtained in Chemistry: ");
-            result = int.TryParse(Console.ReadLine(), out int chem);
+            int chem = 0;
+            result = int.TryParse(Console.ReadLine(), out  chem);
             while (math >= 65 && phy >= 55 && chem >= 50)
             {
                 if ((math + phy + chem) > 180 || (math + phy) > 140)
