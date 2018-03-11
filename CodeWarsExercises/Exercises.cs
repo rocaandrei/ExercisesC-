@@ -28,7 +28,53 @@ namespace CodeWarsExercises
             }
             else
                 return false;
-
+        }
+        public static string HighAndLow3(string numbers)
+        {
+            var parsed = numbers.Split(' ').Select(int.Parse);
+            return parsed.Max() + " " + parsed.Min();
+        }
+        public static string HighAndLow(string numbers)
+        {
+            string[] str;
+            str = numbers.Split(' ');
+            int[] intArr = new int[5];
+            for (int i = 0; i <= str.Length - 1; i++)
+            {
+                intArr[i] = int.Parse(str[i]);
+            }
+            for (int i = 1; i <= intArr.Length - 1; i++)
+            {
+                for (int j = 0; j < intArr.Length - i; j++)
+                {
+                    if (intArr[j] > intArr[j + 1])
+                    {
+                        Swap(intArr, j, j + 1);
+                    }
+                }
+            }
+            string MaxMin = Convert.ToString(intArr[0] + " " + intArr[intArr.Length - 1]);
+            return MaxMin;
+        }
+        public static int[] BubbleSort(int[] sir)
+        {
+            for (int i = 1; i <= sir.Length - 1; i++)
+            {
+                for (int j = 0; j < sir.Length - i; j++)
+                {
+                    if (sir[j] > sir[j + 1])
+                    {
+                        Swap(sir, j, j + 1);
+                    }
+                }
+            }
+            return sir;
+        }
+        private static void Swap(int[] array, int a, int b)
+        {
+            int aux = array[a];
+            array[a] = array[b];
+            array[b] = aux;
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27004.2009
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExercitiiW3source", "ExercitiiW3source\ExercitiiW3source.csproj", "{61E688A1-8E1B-4EC8-A491-EADC61BF233E}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppTests", "ConsoleAppTests\ConsoleAppTests.csproj", "{8E669724-ECDB-450F-A453-31EB8023EC51}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeWarsExercisesTests", "CodeWarsExercisesTests\CodeWarsExercisesTests.csproj", "{122A8767-26C1-45B1-A237-161319DBD1D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxMinValueTest", "CodeWarsExercisesTests1\MaxMinValueTest.csproj", "{AD3F6FD8-BB79-48D1-9FD3-7B722FD47B25}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{122A8767-26C1-45B1-A237-161319DBD1D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{122A8767-26C1-45B1-A237-161319DBD1D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{122A8767-26C1-45B1-A237-161319DBD1D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD3F6FD8-BB79-48D1-9FD3-7B722FD47B25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD3F6FD8-BB79-48D1-9FD3-7B722FD47B25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD3F6FD8-BB79-48D1-9FD3-7B722FD47B25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD3F6FD8-BB79-48D1-9FD3-7B722FD47B25}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
