@@ -210,7 +210,8 @@ namespace ExamplesLinq// Language Integrated Query
             #endregion
             #region GROUP JOIN - in cazul asta o sa grupeze inormatia daca ID-ul este asamanator 
 
-            var grupJoin = from owner in owners orderby owner.OwnerID
+            var grupJoin = from owner in owners
+                           orderby owner.OwnerID
                            join animal in animals on owner.OwnerID equals animal.AnimalID into ownerGrup
                            select new
                            {
@@ -227,6 +228,25 @@ namespace ExamplesLinq// Language Integrated Query
             }
             Console.WriteLine();
             #endregion
+            #region toate animalele unui stapan
+            var oneOwner = from owner in owners
+                           where owner.OwnerID == 1
+                           join animal in animals on owner.OwnerID equals animal.AnimalID into newGrup
+                           select new
+                           {
+                               ownerName = owner.Name,
+                               animalName = from owner2 in newGrup orderby owner2.Name select owner2
+                           };
+          foreach (var newGrup in oneOwner)
+            {
+                Console.WriteLine("Owner {0}", newGrup.ownerName);
+                foreach (var animal in newGrup.animalName)
+                {
+                    Console.WriteLine("* {0} ", animal.Name);
+                }
+            }
+            #endregion
+
         }
 
     }
