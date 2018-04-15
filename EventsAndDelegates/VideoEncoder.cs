@@ -18,7 +18,7 @@ namespace EventsAndDelegates
 
         public delegate void VideoEncodedEventHandler(object source, EventArgs args);//1 am declarat un delegate (primul paramentru- este sursa evenimentului sau clasa lui, al doilea parametru - orice informatie aditionala pe care vrem sa o trimitem mai departe in event
 
-        public event VideoEncodedEventHandler videoEncoded; //trecem la trecut numele adica videoEncoder: pentru ca folosim la trecut si chemam event-ul dupa ce sa encodat
+        public event VideoEncodedEventHandler videoEncoded; //trecem la trecut numele adica videoEncoded: pentru ca folosim la trecut si chemam event-ul dupa ce sa encodat
 
         public void Encode(Video video)
         {
