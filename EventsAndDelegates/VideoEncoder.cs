@@ -28,7 +28,7 @@ namespace EventsAndDelegates
         }
 
         //pentru pasul 3, in care publicam event-ul, trebuie sa avem o metoda responsabila pentru asta
-        protected virtual void OnVideoEncoded()//asta este un publisher si responsabilitatea lui este sa notifice toti subscriberii- .NET sugereaza ca publisherii sa fie protected si void si sa se scrie cu 'On' in fata si dupa numele eventului 
+        protected virtual void OnVideoEncoded()//asta este un publisher si responsabilitatea lui este sa notifice toti subscriberii- .NET sugereaza ca publisherii sa fie protected si void si sa se scrie cu 'On' in fata si dupa numele eventului si virtual as zice eu, sa o suprascrii
         {
 
            /* if (videoEncoded != null)// mai intai verificam daca avem ceva subscriberi inregistrati la eventul nostru(videoEncoded)
