@@ -8,8 +8,7 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(string.Join(" " ,OpenOrSenior(new[] { new[] { 3, 12 }, new[] { 55, 1 }, new[] { 91, -2 }, new[] { 54, 23 } })));
-            Console.ReadLine();
+          
         }
         public static IEnumerable<string> OpenOrSenior(int[][] data)
         {
