@@ -10,7 +10,10 @@ namespace ConsoleApp
     {
         public string str { get; set; }
 
-
+/// <summary>
+/// Add a string to the constructor, we will use it in our NonRepeted method
+/// </summary>
+/// <param name="s">string</param>
         public FirstChar(string s)
         {
             str = s;
@@ -22,7 +25,7 @@ namespace ConsoleApp
             int[] countCh = new int[s.Length];
             for (int i = 0; i < charsFromString.Length; i++)
             {
-                for (int j = 0; j <= charsFromString.Length; j++)
+                for (int j = 0; j < charsFromString.Length; j++)
                 {
                     if(charsFromString[i] == charsFromString[j])
                     {
@@ -32,15 +35,16 @@ namespace ConsoleApp
             }
             for (int i = 0; i < countCh.Length; i++)
             {
-                if(countCh[i] == -1)
-                {
-                    Console.WriteLine("There aren't any chars in this string.");
-                }
                 if (countCh[i] == 1)
                 {
-                    Console.WriteLine("The first non repeated char in this: {0} string is: {1}",str,charsFromString[i]);
+                    Console.WriteLine("The first non repeated char in this: {0} string is: '{1}'.",str,charsFromString[i]);
                     return;
                 }
+               
+            }
+            if(s.Length == 0)
+            {
+                Console.WriteLine("There arrent any chars in this string.");
             }
         }
     }

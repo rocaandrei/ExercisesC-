@@ -8,8 +8,14 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-          
+            FirstChar[] arrayExamples = new FirstChar[] { new FirstChar("GeeksforGeeks"), new FirstChar("Andrei"), new FirstChar(""), new FirstChar(" ") };
+            foreach (var item in arrayExamples)
+            {
+                item.NonRepeted();
+            }
+            Console.ReadKey();
         }
+
         public static IEnumerable<string> OpenOrSenior(int[][] data)
         {
             List<string> subs = new List<string>();
@@ -24,7 +30,7 @@ namespace ConsoleApp
                     subs.Add("Open");
             }
             return subs;
-        }
-    }
+        }  }
 }
+
 
