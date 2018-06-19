@@ -46,8 +46,15 @@ namespace Execute
             bowser = (Animal)obj;
             reader.Close();
             Console.WriteLine(bowser.ToString());
-            
-                Console.ReadKey();
+
+            List<Animal> myListOfAnimal = new List<Animal>()
+            {
+                new Animal("Mario", 34,14),
+                new Animal("Colicica",14,10),
+                new Animal("Lestat", 45, 23.3)
+        };
+
+            Console.ReadKey();
         }
     }
 }
