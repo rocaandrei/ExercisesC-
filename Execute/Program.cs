@@ -53,6 +53,30 @@ namespace Execute
                 new Animal("Colicica",14,10),
                 new Animal("Lestat", 45, 23.3)
         };
+            //mai intai salvam ca XML in fisierul in care l-am salvat si pe bowser 
+            using (Stream fs = new FileStream(@"C:\Users\tony\Desktop\serializare\animals.xml", FileMode.Create, FileAccess.Write, FileShare.None))
+            {
+                XmlSerializer serializer2 = new XmlSerializer(typeof(List<Animal>));
+                serializer2.Serialize(fs, myListOfAnimal);
+            }
+            myListOfAnimal = null;
+
+            //acum o sa luam lista din XML animals si o sa o afisam in consola
+
+            XmlSerializer serializer3 = new XmlSerializer(typeof(List<Animal>));
+
+            using (FileStream fs2 = File.OpenRead(@"C:\Users\tony\Desktop\serializare\animals.xml"))//aici deschidem mai intai lista din xml
+            {
+                myListOfAnimal = (List<Animal>)serializer3.Deserialize(fs2);//AICI DESERIALIZAM DIN FS2
+            }
+            Console.WriteLine();
+            foreach (var item in myListOfAnimal)
+            {
+                Console.WriteLine(item.ToString());
+            }
+
+
+
 
             Console.ReadKey();
         }
