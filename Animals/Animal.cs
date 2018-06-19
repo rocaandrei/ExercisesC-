@@ -25,7 +25,7 @@ namespace Animals
         }
         public override string ToString()
         {
-            return base.ToString();
+            return string.Format("{0} weights: {1} and is {2} tall.",Name,Weight,Height);
         }
     }
 }

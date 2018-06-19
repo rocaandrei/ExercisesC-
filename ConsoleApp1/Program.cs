@@ -1,6 +1,6 @@
-﻿using System;
+﻿using Animals;
 using System.Collections.Generic;
-using System.Linq;
+using System;
 
 namespace ConsoleApp
 {
@@ -8,12 +8,16 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            FirstChar[] arrayExamples = new FirstChar[] { new FirstChar("GeeksforGeeks"), new FirstChar("Andrei"), new FirstChar(""), new FirstChar(" ") };
-            foreach (var item in arrayExamples)
-            {
-                item.NonRepeted();
-            }
-            Console.ReadKey();
+            //FirstChar[] arrayExamples = new FirstChar[] { new FirstChar("GeeksforGeeks"), new FirstChar("Andrei"), new FirstChar(""), new FirstChar(" ") };
+            //foreach (var item in arrayExamples)
+            //{
+            //    item.NonRepeted();
+            //}
+            //Console.ReadKey();
+            Animal a = new Animal("Gita", 223.2, 21.2);
+            Console.WriteLine( a.ToString());
+            Console.ReadLine();
+
         }
 
         public static IEnumerable<string> OpenOrSenior(int[][] data)
@@ -30,7 +34,8 @@ namespace ConsoleApp
                     subs.Add("Open");
             }
             return subs;
-        }  }
+        }
+    }
 }
 
 

@@ -50,6 +50,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Animals\Serialization.csproj">
+      <Project>{126792ec-ce21-42cd-895a-b2ead8bec61f}</Project>
+      <Name>Serialization</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CodeWarsExercises\CodeWarsExercises.csproj">
       <Project>{669f1fb8-2732-4737-8793-fdb6b1d57b39}</Project>
       <Name>CodeWarsExercises</Name>
