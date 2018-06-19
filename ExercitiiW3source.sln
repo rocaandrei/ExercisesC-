@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsAndDelegates", "Event
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SerializationExample", "SerializationExample", "{8D7C3508-8B57-425A-A9D1-BF2782EFCF66}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serialization", "Animals\Serialization.csproj", "{126792EC-CE21-42CD-895A-B2EAD8BEC61F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,9 +67,16 @@ Global
 		{DF35760D-9C92-4054-9D90-73BF463CEB55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF35760D-9C92-4054-9D90-73BF463CEB55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF35760D-9C92-4054-9D90-73BF463CEB55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{126792EC-CE21-42CD-895A-B2EAD8BEC61F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{126792EC-CE21-42CD-895A-B2EAD8BEC61F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{126792EC-CE21-42CD-895A-B2EAD8BEC61F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{126792EC-CE21-42CD-895A-B2EAD8BEC61F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{126792EC-CE21-42CD-895A-B2EAD8BEC61F} = {8D7C3508-8B57-425A-A9D1-BF2782EFCF66}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {63BB5DB7-360A-46E9-B14B-24C44FDC6CDC}
