@@ -25,6 +25,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SerializationExample", "Ser
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serialization", "Animals\Serialization.csproj", "{126792EC-CE21-42CD-895A-B2EAD8BEC61F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Execute", "Execute\Execute.csproj", "{DEB73239-5ABA-4B17-998A-E51A10C50290}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,12 +73,17 @@ Global
 		{126792EC-CE21-42CD-895A-B2EAD8BEC61F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{126792EC-CE21-42CD-895A-B2EAD8BEC61F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{126792EC-CE21-42CD-895A-B2EAD8BEC61F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEB73239-5ABA-4B17-998A-E51A10C50290}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEB73239-5ABA-4B17-998A-E51A10C50290}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEB73239-5ABA-4B17-998A-E51A10C50290}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEB73239-5ABA-4B17-998A-E51A10C50290}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{126792EC-CE21-42CD-895A-B2EAD8BEC61F} = {8D7C3508-8B57-425A-A9D1-BF2782EFCF66}
+		{DEB73239-5ABA-4B17-998A-E51A10C50290} = {8D7C3508-8B57-425A-A9D1-BF2782EFCF66}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {63BB5DB7-360A-46E9-B14B-24C44FDC6CDC}
